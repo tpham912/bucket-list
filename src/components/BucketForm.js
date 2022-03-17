@@ -29,7 +29,7 @@ function BucketForm(props) {
 
   // First we check to see if "edit" prop exists. If not, we render the normal form
   // If the prop "edit" exists, we know to render the update form instead
-  return !props.edit ? (
+  return !props.edit ? ( // Creating
     <div>
       <form className="bucket-form" onSubmit={handleSubmit}>
         <input
@@ -53,7 +53,7 @@ function BucketForm(props) {
         <button className="bucket-button">Add bucket list item</button>
       </form>
     </div>
-  ) : (
+  ) : ( // Updating
     <div>
       <h3>Update entry: {props.edit.value}</h3>
       <form className="bucket-form" onSubmit={handleSubmit}>

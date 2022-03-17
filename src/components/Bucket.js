@@ -10,7 +10,7 @@ function Bucket(props) {
 
   console.log(props.bucket);
 
-  const submitUpdate = (value) => {
+  const submitUpdate = (value) => { 
     props.editBucketItem(edit.id, value);
     setEdit({ id: null, value: '', eagerness: '' });
   };
